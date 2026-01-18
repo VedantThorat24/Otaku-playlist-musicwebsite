@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* padding: 5vw 0; */
+}
+
+#coverimg {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+#coverimg img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#right {
+    width: 65%;
+    height: 100%;
+    /* background-color: powderblue; */
+}
+
+#left {
+    width: 35%;
+    height: 100%;
+    /* background-color: palegoldenrod; */
+}
+
+#left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#title {
+    font-size: 100px;
+    padding: 150px 40px 0;
+}
+
+#right h4 {
+    padding: 2px 40px;
+}
+
+#allsongs h3 {
+    padding: 50px 40px;
+    color: rgb(204, 71, 71);
+}
+
+#part1 {
+
+    /* background-color: powderblue; */
+    display: flex;
+    align-items: center;
+}
+
+#part1 p {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#part1 img {
+    height: 65px;
+    width: 65px;
+    margin-left: 30px;
+    object-fit: cover;
+    /* border-radius: 20px; */
+}
+
+#songcard {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* background-color: rebeccapurple; */
+}
+
+#songcard h6 {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+#songcard:hover {
+    background-color: rgba(204, 71, 71, 0.174);
+    /* border-radius: 10px; */
+    /* border-top: 2px dashed black; */
+    /* border-bottom: 2px dashed black; */
+}
+
+#songname {
+    margin-left: 30px;
+}
+
+#songname h2 {
+    font-size: 25px;
+}
+
+#songname h4 {
+    /* background-color: aqua; */
+    padding: 0;
+    font-size: 13px;
+    color: rgba(76, 76, 76, 0.95);
+}
+
+#player {
+    width: 80%;
+    height: 30px;
+    /* background-color: powderblue; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#player>h3 {
+    color: black;
+    font-size:
+        30px;
+    /* background-color: red; */
+    padding: 0;
+}
+
+#player>h3:active {
+    scale: 1.10;
+}
+
+#coverimg img {
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+}
+
+#coverimg.playing img {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#nav {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    gap: 16px;
+}
+
+#nav a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#nav a:hover {
+    transform: scale(1.2);
+    color: rgb(204, 71, 71);
+}
