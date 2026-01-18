@@ -33,7 +33,7 @@ This project helped me understand how HTML, CSS, and JavaScript actually work to
 ## 🌐 Live Website
 
 🎶 Listen here:  
-👉 
+👉 https://vedantthorat24.github.io/Otaku-playlist-musicwebsite/
 
 ---
 
