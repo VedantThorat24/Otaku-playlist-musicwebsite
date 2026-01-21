@@ -184,3 +184,7 @@ body {
     transform: scale(1.2);
     color: rgb(204, 71, 71);
 }
+
+@media (max-width-600px) {
+    
+}
